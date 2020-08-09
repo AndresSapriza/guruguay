@@ -1,1 +1,0 @@
-Este archivo deberia describir el repositorio guruguay.
