@@ -1,0 +1,177 @@
+/* basic style */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto ", sans-serif;
+  font-size: 14px;
+  color: #212121;
+  line-height: 1.4;
+  background-color: #684343;
+}
+
+.container {
+  margin: 0;
+  padding: 11px 30px;
+}
+
+/* navbar */
+.navbar {
+  padding: 0;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+}
+.nav.navNone {
+  /* display: none; */
+  float: right;
+  line-height: 39px;
+  margin-right: 24px;
+  opacity: 0;
+  transform: translate(0px, 20px);
+  transition: all 0.4s ease-in-out;
+}
+
+.logo,
+.nav {
+  display: inline-block;
+  margin: 0;
+}
+
+/* nav links */
+
+.nav {
+  padding: 0;
+  margin: 16px 0;
+  list-style: none;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+ul.dropdown li {
+  margin-left: 40px;
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 60px; /* the height of the main nav */
+}
+
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+  display: inherit;
+}
+
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+  width: 170px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+.navbar a {
+  color: #2b2b2b;
+  text-decoration: none;
+}
+
+.dropdown a {
+  line-height: 21px;
+  display: inherit;
+  padding: 6px 0px;
+}
+
+.navbar a:hover {
+  color: #ddd;
+}
+
+.navbar svg:hover {
+  fill: #ddd;
+}
+
+.Icon {
+  cursor: pointer;
+  position: absolute;
+  top: 34px;
+  right: 24px;
+}
+
+/* if you want pull right nav links */
+.nav-right {
+  float: right;
+  line-height: 39px;
+  margin-right: 24px;
+  transition: all 0.4s ease-in-out;
+}
+
+.Link {
+  padding: 0px 11px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.Link.menu {
+  display: block;
+  padding-bottom: 24px;
+}
+
+ul.dropdown {
+  background-color: white;
+  border-top: 3px solid #469ca4;
+}
+.searchNone {
+  opacity: 0;
+  right: 30px;
+  position: absolute;
+  top: 0px;
+  width: 890px;
+  height: 24px;
+  transition: all 0.4s ease-in-out;
+}
+
+div.search {
+  right: 30px;
+  position: absolute;
+  top: 0px;
+  width: 890px;
+  height: 24px;
+  transform: translate(0px, 36px);
+  transition: all 0.4s ease-in-out;
+}
+
+input.search {
+  width: calc(100% - 10%);
+  border: none;
+  font-size: 14px;
+  outline: none;
+}
+
+/* responsive */
+@media screen and (max-width: 677px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #logo {
+    height: 59px;
+    width: 108px;
+  }
+}

@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:ital,wght@1,300&display=swap");
+
+.HomeCard-card h1 {
+  font-family: "BebasNeueve", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  letter-spacing: 1px;
+  color: #ffff;
+  margin: 0px;
+}
+
+.topImage {
+  height: 85vh;
+  background: url("https://s23835.pcdn.co/wp-content/uploads/2017/10/Uruguay-Colonia-52.jpg")
+    no-repeat center;
+  background-size: cover;
+}
+
+.HomeCard-card {
+  background-color: rgba(0, 0, 0, 0.59);
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 25px;
+  border-radius: 4px;
+  width: 36vw;
+  position: relative;
+  top: 8vh;
+  left: 4vw;
+}
+
+.HomeCard-title {
+  max-width: 600px;
+  position: relative;
+}
+
+.HomeCard-text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.6em;
+  padding-bottom: 0px !important;
+  max-width: 600px;
+  color: #ffff;
+}
