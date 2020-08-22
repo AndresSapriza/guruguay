@@ -41,3 +41,41 @@
   max-width: 600px;
   color: #ffff;
 }
+
+.Container {
+  margin: 24px 7%;
+  display: flex;
+  flex-grow: 4;
+  justify-content: center;
+}
+
+.Article-card {
+  width: 22%;
+  background-color: white;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+  margin: 0px 16px;
+  border-radius: 4px;
+}
+
+.Article-card:hover {
+  box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.4),
+    0px 24px 38px 3px rgba(0, 0, 0, 0.3),
+    0px 9px 46px 8px rgba(71, 52, 52, 0.24);
+  cursor: pointer;
+  transition: box-shadow 300ms ease 0ms;
+}
+
+.Main-image img {
+  height: 180px;
+  width: 100%;
+}
+
+h2 {
+  margin: 16px;
+  font-size: 14px;
+}
+
+.Article-resume {
+  margin: 16px;
+}
