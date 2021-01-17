@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import "./Header.css";
 import NavMenu from "./NavMenu";
 import SVGIcon from "./SVGIcon";
 import * as iconTypes from "./SVGs/IconTypes";
@@ -71,6 +70,8 @@ const Header = () => {
           ></input>
         </div>
         <SVGIcon
+          height="24px"
+          widt="24px"
           iconClass="Icon"
           path={searchActive ? iconTypes.CLOSE_ICON : iconTypes.SEARCH_ICON}
           onClick={toggleSearch}

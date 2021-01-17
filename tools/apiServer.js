@@ -44,9 +44,8 @@ server.use((req, res, next) => {
   next();
 });
 
-server.post("/courses/", function (req, res, next) {
-  const error = validateCourse(req.body);
-  debugger;
+server.post("/article/", function (req, res, next) {
+  const error = validateArticle(req.body);
   if (error) {
     res.status(400).send(error);
   } else {
@@ -74,9 +73,11 @@ function createSlug(value) {
     .toLowerCase();
 }
 
-function validateCourse(course) {
-  if (!course.title) return "Title is required.";
-  if (!course.authorId) return "Author is required.";
-  if (!course.category) return "Category is required.";
+function validateArticle(article) {
+  if (!article.title) return "Title is required";
+  if (!article.photoMain) return "Main photo is required";
+  if (!article.text) return "Text is required";
+  // if (!article.shortArticle.resume) return "Rext is required";
+  // if (!article.shortArticle.subTitle) return "Subtitle is required";
   return "";
 }

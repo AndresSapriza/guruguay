@@ -1,6 +1,7 @@
 const articles = [
   {
     id: 1,
+    slug: "Posada-Lune-de-Miel",
     title: "Posada Lune de Miel",
     shortArticle: {
       subTitle: "Posada Lune de Miel – best value Punta del Diablo hotel",
@@ -16,6 +17,7 @@ const articles = [
   },
   {
     id: 2,
+    slug: "Salon-No-3",
     title: "Salon No. 3",
     shortArticle: {
       subTitle: "Salon No. 3 – La Barra cuisine",
@@ -31,6 +33,7 @@ const articles = [
   },
   {
     id: 3,
+    slug: "Hotel-Solis",
     title: "Hotel Solis",
     shortArticle: {
       subTitle: "Hotel Solis – historic, coastal B&B",
@@ -46,6 +49,7 @@ const articles = [
   },
   {
     id: 4,
+    slug: "Haras-Las-Tordillas",
     title: "Haras Las Tordillas",
     shortArticle: {
       subTitle: "Haras Las Tordillas – A horse-riding paradise",
@@ -61,7 +65,21 @@ const articles = [
   },
 ];
 
+const newArticle = {
+  id: null,
+  title: "",
+  shortArticle: {
+    subTitle: "",
+    resume: "",
+  },
+  text: "",
+  photoMain: "",
+  photos: "",
+  video: "",
+};
+
 // Using CommonJS style export so we can consume via Node (without using Babel-node)
 module.exports = {
   articles,
+  newArticle,
 };
